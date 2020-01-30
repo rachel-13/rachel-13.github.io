@@ -1,91 +1,414 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/8ea06cdc37.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+   <title>Rachel Fong</title>
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
+
 </head>
 
-<body data-spy="scroll" data-target="#myNavbar" data-offset="50">
-    <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid" id="navbar-div">
-            <div class="nav navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-div">
-                    <span class="sr-only">Toggle navigation</span> 
-                    <span class="icon-bar"></span> 
-                    <span class="icon-bar"></span> 
-                    <span class="icon-bar"></span> 
-                </button> 
-                <a href="#" class="navbar-brand header" id="navbar-header-link">Rachel Fong</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-div">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#about-me-span-anchor" id="navbar-about">About</a></li>
-                    <li><a href="#career-span-anchor" id="navbar-career">Career</a></li>
-                    <li><a href="#contact-me-span-anchor" id="navbar-contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body>
 
-    <div class="container-fluid" id="div-root-content">
-        <!-- About Me -->
-        <span class="anchor" id="about-me-span-anchor"></span>
-        <div class="row" id="about-me-div">
-            <div class="section-header-text"></div>
-            <div class="general-height-padding"></div>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I am Rachel Fong ... </h1>
+            <h3>... a Malaysian mobile software engineer specializing in iOS applications who has a strong passion for learning, solving complex problems and writing clean testable code as well as having an active lifestyle </h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.linkedin.com/in/rachelfongpy" target="_blank">
+                     <i class="fa fa-linkedin"></i></a>
+               </li>
+               <li><a href="https://www.github.com/rachel-13" target="_blank">
+                     <i class="fa fa-github"></i></a>
+               </li>
+               <li><a href="https://stackoverflow.com/users/2266871/rach" target="blank">
+                     <i class="fa fa-stack-overflow"></i></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic" src="img/meseattleaquarium.JPG" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>
+               Graduated with a degree in Computer Engineering, I started my career in software engineering in 2014 after discovering a love for coding and creating products for consumers. In the early days of my career, I was a fullstack engineer with a strong hands-on invovlment in mobile application development before turning my attention to being a full-fledged mobile development engineer. For the next chapter in my career, I would love to be able to dip my feet into backend engineering or artificial intelligence.  
+            </p>
+
             <div class="row">
-                <div class="col-xs-2"></div>
-                <div class="col-xs-8"> 
-                    <img class="author-image" src="img/me.jpg">
-                    <div class="general-height-padding"></div>
-                    <p class="author-about-me-title"> I am Rachel Fong!</p>
-                    <p class="author-about-me">
-                        I am a Malaysian-based mobile application engineer specializing in iOS development with a sprinkle of Android and fullstack development in my career. 
-                        I have a passion for learning beyond my comfort zone, solving complex problems and writing clean testable code that easy to maintain and operate.
-                    </p>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                </div>
-                <div class="col-xs-2"></div>
-            </div>
-        </div>
 
-        <!-- Career -->
-        <span class="anchor" id="career-span-anchor"></span>
-        <div class="row" id="career-div">
-            <div class="general-height-padding"></div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-8">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-3">Education</div>
-                <div class="col-xs-6">Putra University Malaysia</div>
-            </div>
-            <div class="col-xs-2"></div>
+               <div class="columns contact-details">
 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div>
+                  <h2>Contact Details</h2>
+                  <p class="address">
+                     <span>Rachel Fong</span><br>
+                     <span>Petaling Jaya, Selangor, Malaysia<br>
+                     <span>(60)10-8627701</span><br>
+                     <span>fongpohyee@gmail.com</span>
+                  </p>
 
-        <!-- Contact Me -->
-        <span class="anchor" id="contact-me-span-anchor"></span>
-        <div class="row" id="contact-me-div">
-            <div class="row">
-                <div class="general-height-padding"></div>
-                <a href="https://www.linkedin.com/in/rachelfongpy" target="_blank">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://www.github.com/rachel-13" target="_blank">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://stackoverflow.com/users/2266871/rach" target="blank">
-                    <i class="fab fa-stack-overflow fa-2x"></i>
-                </a>
-                <div class="general-height-padding"></div>
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="https://dl.dropbox.com/s/qm6mh1rrq9x5pcy/Curriculum%20Vitae%20OnePager.pdf?dl=0" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Putra University Malaysia</h3>
+                  <p class="info">Bachelor of Engineering (Computer & Communication System) <span>&bull;</span> <em class="date">August 2013</em></p>
+
+                  <p>
+                     Graduated as a first-class honours student with a CGPA of 3.81 with the following awards:
+                     Best Graduate of Computer & Communication Engineering Year 2013<br>
+                     Best Presenter for the 2013 Final Year Exhibition of Faculty of Engineering<br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+         
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Grab</h3>
+                  <p class="info">Software Engineering Manager <span>&bull;</span> <em class="date">December 2018 - Present</em></p>
+
+                  <p>
+                     Design and write scalable frameworks to be re-used all across the organization<br>
+                     Successfully adopted Scrum based workflow and act as Scrum Master for the team<br> 
+                     Manage and grow mobile team from 2 to 6 engineers<br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Photobook Worldwide</h3>
+                  <p class="info">Principal Software Engineer (Mobile) <span>&bull;</span> <em class="date">August 2017 - November 2018</em></p>
+
+                  <p>
+                     Involved in development, code review & architectural design on revamped version of the iOS application while maintaining the legacy application<br>
+                     Built and integrate CI/CD tool into software development process to automate distribution and routine development tasks<br>
+                     Built underlying frameworks for application and performed regular optimization<br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Tranglo</h3>
+                  <p class="info">Senior Mobile Developer <span>&bull;</span> <em class="date">August 2016 - August 2017</em></p>
+
+                  <p>
+                     Developed and launchedcompany’s Android remittance app<br>
+                     Kickstarted iOS version of the application and grew the team from 2 to 4 engineers<br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Fusionex</h3>
+                  <p class="info">Senior Consultant <span>&bull;</span> <em class="date">March 2014 - March 2016</em></p>
+
+                  <p>
+                     Built both backend & mobile SDK for push notification and application versioning system<br>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="bars">
+
+               <ul class="skills">
+                  <li><span class="bar-expand ios"></span><em>iOS</em></li>
+                  <li><span class="bar-expand android"></span><em>Android</em></li>
+                  <li><span class="bar-expand rx"></span><em>Reactive Programming</em></li>
+                  <li><span class="bar-expand management"></span><em>Management</em></li>
+                  <li><span class="bar-expand cicd"></span><em>Continous Integration/Continous Delivery</em></li>
+                  <li><span class="bar-expand agile"></span><em>Agile</em></li>
+               </ul>
+
+            </div><!-- end skill-bars -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+      <div class="row section-head">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get In Touch.</span></h1>
+
+         </div>
+
+         <div class="ten columns">
+
+            <p class="lead">
+               Drop me a message and start a conversation on anything tech or management related. I would love to hear and learn from you!
+            </p>
+
+         </div>
+
+      </div>
+
+      <div class="row">
+
+         <div class="eight columns">
+
+            <!-- form -->
+            <form action="" method="post" id="contactForm" name="contactForm">
+               <fieldset>
+
+                  <div>
+                     <label for="contactName">Name <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+                     <label for="contactEmail">Email <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+                     <label for="contactSubject">Subject</label>
+                     <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+               </fieldset>
+            </form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"> Error boy</div>
+            <!-- contact-success -->
+            <div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
             </div>
-        </div>
-    </div>
+
+         </div>
+
+
+         <aside class="four columns footer-widgets">
+
+            <div class="widget widget_contact">
+
+               <h4>Contact Details</h4>
+               <p class="address">
+                  Rachel Fong<br>
+                  Petaling Jaya, Selangor, Malaysia <br>
+                  <span>(60) 10-8627701</span>
+               </p>
+
+            </div>
+
+         </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.linkedin.com/in/rachelfongpy" target="_blank">
+                     <i class="fa fa-linkedin"></i></a>
+               </li>
+               <li><a href="https://www.github.com/rachel-13" target="_blank">
+                     <i class="fa fa-github"></i></a>
+               </li>
+               <li><a href="https://stackoverflow.com/users/2266871/rach" target="blank">
+                     <i class="fa fa-stack-overflow"></i></a>
+               </li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2020 Rachel Fong</li>
+               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
+         </div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>
+      window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
+   </script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
 </body>
 
 </html>
